@@ -86,3 +86,23 @@ Feel free to create an [issue](https://github.com/clerkinc/clerk-nextjs-app-quic
 You can discuss ideas, ask questions, and meet others from the community in our [Discord](https://discord.com/invite/b5rXHjAg7A).
 
 If you prefer, you can also find support through our [Twitter](https://twitter.com/ClerkDev), or you can [email](mailto:support@clerk.dev) us!
+
+## steps that must be taken in the app in order to produce the error
+
+You don't need to add Clerk credentials to reproduce this issue.
+This issue is being discussed in Discord: https://discord.com/channels/856971667393609759/1200877470547722240
+This is a very light setup of using Next.js, Clerk, and Tailwind UI.
+
+1. Execute this in terminal: npm run build
+2. See this error message in Terminal:
+   Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+
+⨯ useSearchParams() should be wrapped in a suspense boundary at page "/404". Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
+
+Error occurred prerendering page "/\_not-found". Read more: https://nextjs.org/docs/messages/prerender-error
+✓ Generating static pages (5/5)
+
+> Export encountered errors on following paths:
+
+        /_not-found
+        /page: /
